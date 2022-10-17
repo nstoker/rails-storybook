@@ -7,4 +7,16 @@ class ButtonComponentPreview < ViewComponent::Preview
     
     render(ButtonComponent.new(type: type)) { 'Button' }
   end
+
+  def primary
+    render(ButtonComponent.new(type: :primary)) { 'Primary' }
+  end
+
+  def outline
+    render(ButtonComponent.new(type: :outline)) { 'Outline' }
+  end
+
+  def danger
+    render(ButtonComponent.new(type: :danger)) { 'Danger' }
+  end
 end
